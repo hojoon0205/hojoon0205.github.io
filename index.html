@@ -5,7 +5,61 @@
         Slay the Spire Wiki
     </title>
     <style>
-        
+        body {
+            margin: 0px;
+            background: #DFDFDF;
+        }
+        div.header {
+            background-color: #0C0C0C;
+            border: 0px;
+            padding: 10px 20px;
+        }
+        div.header h1 {
+            font-family: "Gothic";
+            color: white;
+        }
+        div.header ul.tabs {
+            font-size: 15pt;
+            color: white;
+            padding-inline-start: 0px;
+        }
+        div.header ul.tabs li {
+            display: inline;
+            text-align: center;
+            padding: 5px;
+        }
+        div.wikipage {
+            padding: 20px;
+        }
+        div.content-header {
+        }
+        div.wikipage h1 {
+            padding: 10px 0px;
+            font-size: 36px;
+            border-width: 0px 0px 1px 0px;
+            border-style: solid;
+            border-color: #8F8F8F;
+        }
+        div.wikipage h2 {
+            padding: 5px;
+            font-size: 20px;
+            border-width: 0px 0px 1px 0px;
+            border-style: solid;
+            border-color: #8F8F8F;
+        }
+        hr.separator {
+            margin-bottom: 18px;
+            border: 0;
+        }
+        #left-side-content {
+            display: inline;
+            width: calc(100% - 320px);
+            float: left;
+        }
+        #right-side-image {
+            display: inline;
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -21,9 +75,18 @@
     <div class="wikipage">
         <div class="content-header">
             <h1>Home</h1>
-            <h2>Welcome to Slay the Spire Wiki</h2>
-            <h2>What is Slay the Spire?</h2>
-            <p>Slay the Spire is a deck-building roguelike make by <a herf="">Mega Crit</a>.</p>
+            <hr class="separator">
+            <div id="left-side-content">
+
+                <h2>Welcome to Slay the Spire Wiki</h2>
+                <h2>What is Slay the Spire?</h2>
+                <p>Slay the Spire is a deck-building roguelike make by <a herf="https://www.megacrit.com/">Mega Crit</a>.</p>
+            </div>
+            <div id="right-side-image">
+                <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/">
+                    <img src="http://slaythespire.wdfiles.com/local--files/start/eng.png" alt="Slay the Spire" width="298" height="235">
+                </a>
+            </div>
         </div>
         <div>
         </div>
