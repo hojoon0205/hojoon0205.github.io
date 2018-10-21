@@ -7,11 +7,18 @@
     <style>
         body {
             margin: 0px;
-            background: #DFDFDF;
+            background: #FFFFFF;
+        }
+        a {
+            color: #0A3073;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         div.header {
             background-color: #0C0C0C;
-            border: 0px;
+            border-bottom: 1px solid #CCCCCC;
             padding: 10px 20px;
         }
         div.header h1 {
@@ -29,7 +36,10 @@
             padding: 5px;
         }
         div.wikipage {
-            padding: 20px;
+            background: none;
+            padding: 0px 20%;
+            width: 60%;
+            height: 100%;
         }
         div.content-header {
         }
@@ -41,28 +51,97 @@
             border-color: #8F8F8F;
         }
         div.wikipage h2 {
-            padding: 5px;
+            padding: 0px 0px 5px 0px;
             font-size: 20px;
             border-width: 0px 0px 1px 0px;
             border-style: solid;
             border-color: #8F8F8F;
         }
+        div.wiki-background {
+            background: #DFDFDF;
+            position: fixed;
+            border-style: solid;
+            border-width: 0px 1px 0px 1px;
+            border-color: #CCCCCC;
+            margin: 0px 15%;
+            top: 0px;
+            width: 70%;
+            height: 100%;
+            z-index: -1;
+        }
         hr.separator {
             margin-bottom: 18px;
             border: 0;
         }
-        #left-side-content {
+        div.left-side-content {
             display: inline;
             width: calc(100% - 320px);
             float: left;
         }
-        #right-side-image {
+        div.right-side-image {
             display: inline;
             float: right;
+        }
+        ul.nav-control {
+            background-color: #0C0C0C;
+            position: fixed;
+            z-index: 99999;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #CCCCCC;
+            border-left: 1px solid #CCCCCC;
+            border-top-left-radius: 5px;
+        }
+        ul.nav-control li {
+            list-style: none;
+        }
+        #topButton {
+            text-align: center;
+            display: inline-block;
+            color: white;
+            font-size: 27pt;
+            width: 40px;
+            height: 40px;
+            vertical-align: center;
+            box-sizing: border-box;
+        }
+        #bottomButton {
+            text-align: center;
+            border-left: 2px dashed #CCCCCC;
+            display: inline-block;
+            color: white;
+            font-size: 27pt;
+            width: 40px;
+            height: 40px;
+            vertical-align: center;
+            box-sizing: border-box;
+        }
+        ion-icon {
+            display: inline-block;
+        }
+        table.topics * {
+            text-align: center;
+            vertical-align: center;
+        }
+        table.topics {
+            width: 100%;
+        }
+        table.topics tr {
+            width: 100%;
+        }
+        table.topics tr td {
+            width: 33%;
+        }
+        img.char-icon {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
+    <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
     <div class="header">
         <h1>Slay The Spire Wiki</h1>
         <ul class="tabs">
@@ -72,24 +151,125 @@
             <li>OTHERS</li>
         </ul>
     </div>
+    <div class="wiki-background"></div>
     <div class="wikipage">
         <div class="content-header">
             <h1>Home</h1>
             <hr class="separator">
-            <div id="left-side-content">
-
+            <div class="left-side-content">
                 <h2>Welcome to Slay the Spire Wiki</h2>
+                <p>Greetings, wanderer! Prepare your decks, potions and relics and sit comfortably. Here you will learn all there is to know about Slay the Spire.
+<p>
                 <h2>What is Slay the Spire?</h2>
-                <p>Slay the Spire is a deck-building roguelike make by <a herf="https://www.megacrit.com/">Mega Crit</a>.</p>
+                <p>Slay the Spire is a deck-building roguelike make by <a href="https://www.megacrit.com/">Mega Crit</a>.</p>
+                <p>Slay the spire is a game in which you climb The Spire, traversing three acts with many unique enemies, bosses, and encounters. While climbing your way up to the Heart of the Spire, you will encounter many challenges, which you will have to overcome to reach the boss, the final enemy of the act. The levels are procedurally generated, so each game will be a different experience.</p>
+                <p>Slay the Spire is a game primarily about survival, collecting cards, and building a powerful deck to wipe out your foes. Good luck and happy deckbuilding!</p>
+                <h2>Topics</h2>
+                <table class="topics">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="./ironclad.html"><img src="./Ironclad.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./silent.html"><img src="./Silent.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./defect.html"><img src="./Defect.png" class="char-icon"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./ironclad.html">Ironclad</a>
+                            </td>
+                            <td>
+                                <a href="./silent.html">Silent</a>
+                            </td>
+                            <td>
+                                <a href="./defect.html">Defect</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./monsters.html"><img src="./MonsterIcon.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./elites.html"><img src="./EliteIcon.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./bosses.html"><img src="./BossIcon.png" class="char-icon"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./monsters.html">Monsters</a>
+                            </td>
+                            <td>
+                                <a href="./elites.html">Elites</a>
+                            </td>
+                            <td>
+                                <a href="./bosses.html">Bosses</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./map_info.html"><img src="./MapIcon.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./events.html"><img src="./EventIcon.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./relics.html"><img src="./RelicIcon.png" class="char-icon"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./map_info.html">Map Locations</a>
+                            </td>
+                            <td>
+                                <a href="./events.html">Events</a>
+                            </td>
+                            <td>
+                                <a href="./relics.html">Relics</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./potions.html"><img src="./PotionIcon.png" class="char-icon"></a>
+                            </td>
+                            <td>
+                                <a href="./ascention.html"><img src="./AscentionIcon.png" class="char-icon"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="./potions.html">Potions</a>
+                            </td>
+                            <td>
+                                <a href="./ascention.html">Ascention</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div id="right-side-image">
+            <div class="right-side-image">
                 <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/">
                     <img src="http://slaythespire.wdfiles.com/local--files/start/eng.png" alt="Slay the Spire" width="298" height="235">
                 </a>
             </div>
         </div>
-        <div>
-        </div>
     </div>
+    <ul class="nav-control">
+        <li style="float: left">
+            <a href="#top" id="topButton">
+                <ion-icon name="arrow-dropup"></ion-icon>
+            </a>
+        </li>
+        <li style="float:right">
+            <a href="#bottom" id="bottomButton">
+                <ion-icon name="arrow-dropdown"></ion-icon>
+            </a>
+        </li>
+    </ul>
 </body>
 </html>
