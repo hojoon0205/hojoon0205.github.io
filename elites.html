@@ -66,6 +66,13 @@
             border-style: solid;
             border-color: #8F8F8F;
         }
+        div.wikipage h3 {
+            padding: 0px 0px 5px 0px;
+            font-size: 16px;
+            border-width: 0px 0px 1px 0px;
+            border-style: solid;
+            border-color: #8F8F8F;
+        }
         div.wiki-background {
             background: #CCCCCC;
             position: fixed;
@@ -187,6 +194,31 @@
             background-color: #F1F1F1;
             border-radius: 5px;
         }
+        .monster-table {
+            border: 0px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .monster-table-body {
+            
+        }
+        .monster-table-header {
+            text-align: center;
+            padding: 5px;
+            background-color: #AAAAAA;
+            border-bottom: 1px solid #AAAAAA;
+        }
+        .monster-table-header td {
+            text-align: center;
+            padding: 10px;
+        }
+        .monster-table-row {
+            border-bottom: 1px solid #AAAAAA;
+        }
+        .monster-table-row td {
+            padding: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -240,121 +272,26 @@
     <div class="wiki-background"></div>
     <div class="wikipage">
         <div class="content-header">
-            <h1>Home</h1>
-            <hr class="separator">
-            <div class="left-side-content">
-                <h2>Welcome to Slay the Spire Wiki</h2>
-                <p>Greetings, wanderer! Prepare your decks, potions and relics and sit comfortably. Here you will learn all there is to know about Slay the Spire.
-<p>
-                <h2>What is Slay the Spire?</h2>
-                <p>Slay the Spire is a deck-building roguelike make by <a href="https://www.megacrit.com/">Mega Crit</a>.</p>
-                <p>Slay the spire is a game in which you climb The Spire, traversing three acts with many unique enemies, bosses, and encounters. While climbing your way up to the Heart of the Spire, you will encounter many challenges, which you will have to overcome to reach the boss, the final enemy of the act. The levels are procedurally generated, so each game will be a different experience.</p>
-                <p>Slay the Spire is a game primarily about survival, collecting cards, and building a powerful deck to wipe out your foes. Good luck and happy deckbuilding!</p>
-                <h2>Topics</h2>
-                <table class="topics">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <a href="./ironclad.html"><img src="./images/Ironclad.png" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./silent.html"><img src="./images/Silent.png" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./defect.html"><img src="./images/Defect.png" class="char-icon"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./ironclad.html">Ironclad</a>
-                            </td>
-                            <td>
-                                <a href="./silent.html">Silent</a>
-                            </td>
-                            <td>
-                                <a href="./defect.html">Defect</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./monsters.html"><img src="./images/MonsterIcon.png" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./elites.html"><img src="./images/EliteIcon.png" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./bosses.html"><img src="./images/BossIcon.png" class="char-icon"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./monsters.html">Monsters</a>
-                            </td>
-                            <td>
-                                <a href="./elites.html">Elites</a>
-                            </td>
-                            <td>
-                                <a href="./bosses.html">Bosses</a>
-                            </td>
-                        </tr>
-                        <tr>
-<!--
-                            <td>
-                                <a href="./map_info.html"><img src="./images/MapIcon.png" class="char-icon"></a>
-                            </td>
--->
-                            <td>
-                                <a href="./events.html"><img src="./images/EventIcon.png" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./relics.html"><img src="./images/RelicIcon.png" class="char-icon"></a>
-                            </td>
-                        </tr>
-                        <tr>
-<!--
-                            <td>
-                                <a href="./map_info.html">Map Locations</a>
-                            </td>
--->
-                            <td>
-                                <a href="./events.html">Events</a>
-                            </td>
-                            <td>
-                                <a href="./relics.html">Relics</a>
-                            </td>
-                        </tr>
-<!--
-                        <tr>
-                            <td>
-                                <a href="./potions.html"><img src="./images/PotionIcon.png" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./ascention.html"><img src="./images/AscentionIcon.jpg" class="char-icon"></a>
-                            </td>
-                            <td>
-                                <a href="./achievements.html"><img src="./images/AchievementIcon.jpg" class="char-icon"></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="./potions.html">Potions</a>
-                            </td>
-                            <td>
-                                <a href="./ascention.html">Ascention</a>
-                            </td>
-                            <td>
-                                <a href="./achievements.html">Achievements</a>
-                            </td>
-                        </tr>
--->
-                    </tbody>
-                </table>
-            </div>
-            <div class="right-side-image">
-                <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/">
-                    <img src="http://slaythespire.wdfiles.com/local--files/start/eng.png" alt="Slay the Spire" width="298" height="235">
-                </a>
-            </div>
+            <h1>Elites</h1>
+            <p>Elites are stronger monster encounters that are marked separately from normal ones on the map. Defeating an elite will grant you a random relic and add a score bonus. Depending on the strength of one's deck, fighting elites may not always be a good idea, but the relics they grant can be very powerful.</p>
+            <h2>Act I</h2>
+            <ul style="list-style:square;">
+                <li>Gremlin Nob</li>
+                <li>Sentry x3</li>
+                <li>Lagavulin</li>
+            </ul>
+            <h2>Act II</h2>
+            <ul style="list-style:square;">
+                <li>Book of Stabbing</li>
+                <li>Taskmaster + Blue Slaver + Red Slaver</li>
+                <li>Gremlin Leader + random 2 gremlins</li>
+            </ul>
+            <h2>Act III</h2>
+            <ul style="list-style:square;">
+                <li>Nemesis</li>
+                <li>Giant Head</li>
+                <li>Reptomancer + 2 Daggers</li>
+            </ul>
         </div>
     </div>
     <ul class="nav-control">
