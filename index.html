@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0px;
-            background: #FFFFFF;
+            background: #3F3F3F;
         }
         a {
             color: #0A3073;
@@ -17,23 +17,31 @@
             text-decoration: underline;
         }
         div.header {
-            background-color: #0C0C0C;
-            border-bottom: 1px solid #CCCCCC;
-            padding: 10px 20px;
+            top: 0px;
+            background-color: #3E7530;
+            border-bottom: 1px solid #3E7530;
+            padding: 10px 20px 0px 40px;
         }
         div.header h1 {
-            font-family: "Gothic";
+            font-family: sans-serif;
             color: white;
+        }
+        div.header h1 a {
+            font-family: sans-serif;
+            color: white;
+            text-decoration: none;
         }
         div.header ul.tabs {
             font-size: 15pt;
             color: white;
             padding-inline-start: 0px;
+            overflow: hidden;
         }
         div.header ul.tabs li {
-            display: inline;
+            display: inline-block;
             text-align: center;
             padding: 5px;
+            float: left;
         }
         div.wikipage {
             background: none;
@@ -44,8 +52,9 @@
         div.content-header {
         }
         div.wikipage h1 {
+            margin-top: 40px;
             padding: 10px 0px;
-            font-size: 36px;
+            font-size: 40px;
             border-width: 0px 0px 1px 0px;
             border-style: solid;
             border-color: #8F8F8F;
@@ -58,14 +67,14 @@
             border-color: #8F8F8F;
         }
         div.wiki-background {
-            background: #DFDFDF;
+            background: #CCCCCC;
             position: fixed;
             border-style: solid;
             border-width: 0px 1px 0px 1px;
             border-color: #CCCCCC;
-            margin: 0px 15%;
+            margin: 0px 10%;
             top: 0px;
-            width: 70%;
+            width: 80%;
             height: 100%;
             z-index: -1;
         }
@@ -83,7 +92,7 @@
             float: right;
         }
         ul.nav-control {
-            background-color: #0C0C0C;
+            background-color: #3E7530;
             position: fixed;
             z-index: 99999;
             right: 0;
@@ -104,18 +113,16 @@
             font-size: 27pt;
             width: 40px;
             height: 40px;
-            vertical-align: center;
             box-sizing: border-box;
         }
         #bottomButton {
             text-align: center;
-            border-left: 2px dashed #CCCCCC;
+            border-left: 2px dotted #CCCCCC;
             display: inline-block;
             color: white;
             font-size: 27pt;
             width: 40px;
             height: 40px;
-            vertical-align: center;
             box-sizing: border-box;
         }
         ion-icon {
@@ -138,17 +145,96 @@
             width: 100px;
             height: 100px;
         }
+        li.dropdown-tab {
+            display: inline-block;
+            height: 30px;
+            padding: 0px;
+        }
+        li.dropdown-tab:hover div.dropdown-box {
+            background-color: #1F4720;
+            color: #CCCCCC;
+        }
+        div.dropdown-box {
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+            font-size:15pt;
+            border-radius: 5px;
+        }
+        div.dropdown-box ion-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        div.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #F9F9F9;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        li.dropdown-tab:hover div.dropdown-content {
+            display: block;
+        }
+        div.dropdown-content a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            padding: 12px 16px;
+        }
+        div.dropdown-content a:hover {
+            background-color: #F1F1F1;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+    <a name="top"></a>
     <div class="header">
-        <h1>Slay The Spire Wiki</h1>
+        <h1><a href="./index.html">Slay The Spire Wiki</a></h1>
         <ul class="tabs">
-            <li>CHARACTERS</li>
-            <li>CARDS</li>
-            <li>ENEMIES</li>
-            <li>OTHERS</li>
+            <li class="dropdown-tab">
+                <div class="dropdown-box">
+                    CHARACTERS<ion-icon name="arrow-dropdown"></ion-icon>
+                </div>
+                <div class="dropdown-content">
+                    <a href="./ironclad.html">Ironclad</a>
+                    <a href="./silent.html">Silent</a>
+                    <a href="./defect.html">Defect</a>
+                </div>
+            </li>
+            <li class="dropdown-tab">
+                <div class="dropdown-box">
+                    CARDS<ion-icon name="arrow-dropdown"></ion-icon>
+                </div>
+                <div class="dropdown-content">
+                    <a href="./ironclad-cards.html">Ironclad Cards</a>
+                    <a href="./silent-cards.html">Silent Cards</a>
+                    <a href="./defect-cards.html">Defect Cards</a>
+                    <a href="./neutral-cards.html">Nerutal Cards</a>
+                </div>
+            </li>
+            <li class="dropdown-tab">
+                <div class="dropdown-box">
+                    ENEMIES<ion-icon name="arrow-dropdown"></ion-icon>
+                </div>
+                <div class="dropdown-content">
+                    <a href="./monsters.html">Monsters</a>
+                    <a href="./elites.html">Elites</a>
+                    <a href="./bosses.html">Bosses</a>
+                </div>
+            </li>
+            <li class="dropdown-tab">
+                <div class="dropdown-box">
+                    OTHERS<ion-icon name="arrow-dropdown"></ion-icon>
+                </div>
+                <div class="dropdown-content">
+                    <a href="./events.html">Events</a>
+                    <a href="./relics.html">Relics</a>
+                </div>
+            </li>
         </ul>
     </div>
     <div class="wiki-background"></div>
@@ -277,5 +363,6 @@
             </a>
         </li>
     </ul>
+    <a name="bottom"></a>
 </body>
 </html>
