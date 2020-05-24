@@ -8,8 +8,8 @@ sidebar_link: true
 
 - Name: 류호준 (Ryou Ho-Joon)
 - E-mail: hojoon0205@gmail.com
-- Github: https://github.com/hojoon0205
-- Codeforces: https://codeforces.com/profile/hojoon0205
+- Github: [https://github.com/hojoon0205]
+- Codeforces: [https://codeforces.com/profile/hojoon0205]
 - Programming Languages: C, C++, Python
 
 # Education
