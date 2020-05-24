@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Ryou Ho Joon
 tagline:          'A Jekyll theme'
 description:      'Problem Solving & Competition Programming'
-url:              https://fongandrew.github.io
+url:              https://hojoon0205.github.io
 baseurl:          
 remote_theme:     fongandrew/hydeout
                   # the optional subpath of your site, e.g. "/blog"
@@ -16,8 +16,8 @@ remote_theme:     fongandrew/hydeout
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'HoJoon Ryou'
+  url:            https://twitter.com/ZATdwetne
 
 paginate:         5
 # paginate_path:    '/page:num'
